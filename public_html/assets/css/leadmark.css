@@ -11818,7 +11818,7 @@ textarea.form-control {
 }
 
 .section .section-subtitle {
-  font-size: calc(17px + (13 - 13) * ((100vw - 320px) / (1200 - 320)));
+  font-size: calc(20px + (13 - 13) * ((100vw - 320px) / (1200 - 320)));
   font-weight: 500;
   margin-bottom: 0px;
   opacity: .9;
