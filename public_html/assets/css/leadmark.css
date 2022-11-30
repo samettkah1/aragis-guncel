@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6, p{
 .skillBtn{background-color: rgb(255, 255, 255);
   text-align: center;
   color: #450000;
-  background:url(/public_html/assets/imgs/arrow_down1.png);
+  background:url(/public_html/assets/imgs/mouse-click-icon.webp);
   width: 60px;
   height: 60px;
   border: none;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6, p{
   border: 2px solid transparent;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  background-size:100%; 
+  background-size:90%; 
   background-repeat: no-repeat;
   border-radius: 50%;
 }
