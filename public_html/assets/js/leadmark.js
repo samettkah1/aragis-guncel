@@ -39,11 +39,6 @@ $(window).on("load", function() {
         }), !1
     })
 })
-
-
-
-
-
 // Skill button
   function myFunction() {
     var dots = document.getElementById("dots");
@@ -60,4 +55,4 @@ $(window).on("load", function() {
       moreText.style.display = "inline";
     }
   }
- 
+  

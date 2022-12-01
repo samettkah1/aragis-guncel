@@ -10,17 +10,36 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
 	<link rel="stylesheet" href="assets/css/leadmark.css">
-    <link rel="icon" href="/public_html/assets/imgs/logo.png" type="image/x-icon" >
+    <link rel="icon" href="assets/imgs/logo.png" type="image/x-icon" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-   
+    <script src="https://kit.fontawesome.com/64610c8cda.js" crossorigin="anonymous"></script>
+<script>$(document).ready(function(){
+  $(".navbar .nav-link").on('click', function(event) {
 
+      if (this.hash !== "") {
+
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top
+          }, 700, function(){
+              window.location.hash = hash;
+          });
+      } 
+  });
+});</script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- whatsapp  -->    
-    <font title="Press here to go whatsapp"><a target="_blank"href="https://wa.me/+905343663505"><button class="wpbtn"></button></a></font>
+
+    <form action="https://wa.me/+905343663505" target="_blank">
+      <input class="wpbtn"  type="submit" value="" />
+  </form>
     <!-- end whatsapp -->
     <!-- page Navigation -->
    <div> <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
@@ -84,7 +103,6 @@
            
 
             <h6 style="margin-right: 70px;" class="section-title text-center">Our Solutions</h6>
-           
             <h6 style="margin-right: 120px;" class="section-subtitle text-center mb-5 pb-3">We offer efficient, high performance and guaranteed solutions with our experienced team having strong references</h6>
 
          <div class="solutionout1">
@@ -117,9 +135,10 @@
         </div>
     </section>
     <!-- End OF Service Section -->
-    
-    <div align="center"><img  style="margin-bottom: 40px;margin-top: 40px;width:90%;align-items: center;" src="/public_html/assets/imgs/coffee.jpg" alt="coffee">  </div>
+   
+    <div align="center"><img  style="margin-bottom: 40px;margin-top: 40px;width:90%;align-items: center;" src="assets/imgs/coffee.jpg" alt="coffee">  </div>
   <hr style="align-items: center;width:80%;margin-left: 140px;">
+
     <section>
         <div class="container">
         <div style="font-size:1.5rem ;" class="row center counters dark">
@@ -135,17 +154,41 @@
                 <label>Active Work</label>
             </div>
             <div class="col-md-3 col-sm-6">
-                <i class="fa fa-coffee"></i>
-                <strong data-to="1925" data-append="+">1925+</strong>
-                <label>Cup of Coffee</label>
+              <i class="fa-solid fa-code"></i>
+                <strong data-to="1925" data-append="+">796+</strong>
+                <label>API Services</label>
             </div>
             <div class="col-md-3 col-sm-6">
                 <i class="fa fa-bar-chart"></i>
-                <strong data-to="6">8</strong>
+                <strong data-to="6"  data-append="+"><script>function calculateAge(birthMonth, birthDay, birthYear)
+                  {
+                    todayDate = new Date();
+                    todayYear = todayDate.getFullYear();
+                    todayMonth = todayDate.getMonth();
+                    todayDay = todayDate.getDate();
+                    age = todayYear - birthYear;
+                   
+                    if (todayMonth < birthMonth - 1)
+                    {
+                      age--;
+                    }
+                   
+                    if (birthMonth - 1 == todayMonth && todayDay < birthDay)
+                    {
+                      age--;
+                    }
+                    return age;
+                  }
+                  
+                  document.write(calculateAge(1,1,2015) );
+                </script> 
+                  </strong>
+              
                 <label>Years of Experience</label>
             </div>
         </div>
-        </div></section>
+        </div>
+      </section>
        <hr style="align-items: center;width:80%;margin-left: 140px;">
     <!-- About section -->
     <section class="section" id="about">
@@ -156,16 +199,16 @@
                     <p></p>
                     <h6 id="whoarewe" class="section-title mb-0">Who Are We?</h6>
                     <p class="prf">
-                        We started our activities as a project company providing engineering services in the 2000s. We continue our activities as a system integrator that has proven itself throughout the country with a structure that constantly improves itself in parallel with the developing technology.    </p>
-                    <img src="/public_html/assets/imgs/about2.jpg" alt="office" class="w-100 mt-3 shadow-sm">
+                      As Armoli Teknoloji Corporation, we started our activities as a software engineering company providing engineering services in the 2000s. We have been continuing our activities under the name of Aragis engineering since 2022 as a software company that has proven itself throughout the country with a structure that constantly improves itself in parallel with the developing technology.                       </p>
+                    <img src="assets/imgs/about2.jpg" alt="office" class="w-100 mt-3 shadow-sm">
                 </div>
                 <div class="col-md-6 pl-md-5">
                     <div class="row">
                         <div class="col-6">
-                            <img src="/public_html/assets/imgs/about-1.jpg" alt="" class="w-100 shadow-sm">
+                            <img src="assets/imgs/about-1.jpg" alt="" class="w-100 shadow-sm">
                         </div>
                         <div class="col-6">
-                            <img src="/public_html/assets/imgs/aboutoffice1.png" alt="" class="w-100 shadow-sm">
+                            <img src="assets/imgs/aboutoffice1.png" alt="" class="w-100 shadow-sm">
                         </div>
                         <div class="col-12 mt-4">
                             <p><h5> Our Mission</h5></p>
@@ -181,7 +224,7 @@
     </section>
     <!-- End OF About Section -->
 
-
+    
     <!-- Testmonial Section -->
     <!-- <section class="section" id="testmonial">
         <div class="container">
@@ -220,98 +263,182 @@
         </div>
     </section> -->
     <!-- End of Testmonial Section -->
-
-    <!-- Programming Languages starts -->
     <p style="margin-bottom:70px ;" id="codlan"></p>
-
-    <div align="center"><h1 id="skillsid" style="margin-top:20px ;"> Programming Languages That We Use <span id="dots"></span> </h1><span id="more">
-      <div class="container1">
-      <div class="skills">
-        <div class="border">
-      <table>
-        <thead>
-         
-        </thead>
-        <tbody>
-          <tr>
-            <td>JavaScript</td>
-            <td><span class="percent">95%</span>
-              <div class="bar one">
-                <div class="fill" style="width:95%;"></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>PHP</td>
-            <td>
-              <span class="percent">85%</span>
-              <div class="bar one">
-                <div class="fill" style="width:85%;"></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td><span class="percent">35%</span>
-              <div class="bar two">
-                <div class="fill" style="width:35%;"></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>VB .Net</td>
-            <td><span class="percent">90%</span>
-              <div class="bar one">
-                <div class="fill" style="width:90%;"></div>
-              </div>
-            </td>
-          </tr>
-                <tr>
-            <td>C#</td>
-            <td><span class="percent">73%</span>
-              <div class="bar one">
-                <div class="fill" style="width:73%;"></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Java</td>
-            <td><span class="percent">30%</span>
-              <div class="bar two">
-                <div class="fill" style="width:30%;"></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td><span class="percent">95%</span>
-              <div class="bar one">
-                <div class="fill" style="width:95%;"></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>HTML5</td>
-            <td><span class="percent">99%</span>
-              <div class="bar one">
-                <div class="fill" style="width:99%;"></div>
-              </div>
-            </td>
-          </tr>
-        
-        </tbody>
-       
-      </table>
-     </div>
+<!-- programming language -->
+   <div> <details>
+    <summary  style="font-size:32px ;text-align: center;">Programming languages that we use</summary>
+    <div class="content">
+      <div>
+        <div class="container1">
+          <div class="skills">
+            <div class="border">
+          <table>
+            <thead>
+             
+            </thead>
+            <tbody>
+              <tr>
+                <td>JavaScript</td>
+                <td><span class="percent">90%</span>
+                  <div class="bar one">
+                    <div class="fill" style="width:90%;"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>PHP</td>
+                <td>
+                  <span class="percent">85%</span>
+                  <div class="bar one">
+                    <div class="fill" style="width:85%;"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td><span class="percent">70%</span>
+                  <div class="bar one">
+                    <div class="fill" style="width:70%;"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>VB .Net</td>
+                <td><span class="percent">30%</span>
+                  <div class="bar two">
+                    <div class="fill" style="width:30%;"></div>
+                  </div>
+                </td>
+              </tr>
+                    <tr>
+                <td>C#</td>
+                <td><span class="percent">15%</span>
+                  <div class="bar three">
+                    <div class="fill" style="width:15%;"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td><span class="percent">85%</span>
+                  <div class="bar one">
+                    <div class="fill" style="width:85%;"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td><span class="percent">95%</span>
+                  <div class="bar one">
+                    <div class="fill" style="width:95%;"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>HTML5</td>
+                <td><span class="percent">85%</span>
+                  <div class="bar one">
+                    <div class="fill" style="width:85%;"></div>
+                  </div>
+                </td>
+              </tr>
+            
+            </tbody>
+           
+          </table>
+         </div>
+          </div>
+        </div>
       </div>
-    </div></span></div>
+    <script>class Accordion {
+      constructor(el) {
+        this.el = el;
+        this.summary = el.querySelector('summary');
+        this.content = el.querySelector('.content');
     
-    <div align="center"><a href="#codlan"><button style="margin-bottom:50px ;" class="skillBtn" onclick="myFunction()" ></button></a></div>
-      <!-- End of programming languages percentage -->
+        this.animation = null;
+        this.isClosing = false;
+        this.isExpanding = false;
+        this.summary.addEventListener('click', (e) => this.onClick(e));
+      }
+    
+      onClick(e) {
+        e.preventDefault();
+        this.el.style.overflow = 'hidden';
+        if (this.isClosing || !this.el.open) {
+          this.open();
+        } else if (this.isExpanding || this.el.open) {
+          this.shrink();
+        }
+      }
+    
+      shrink() {
+        this.isClosing = true;
+        
+        const startHeight = `${this.el.offsetHeight}px`;
+        const endHeight = `${this.summary.offsetHeight}px`;
+        
+        if (this.animation) {
+          this.animation.cancel();
+        }
+        
+        this.animation = this.el.animate({
+          height: [startHeight, endHeight]
+        }, {
+          duration: 400,
+          easing: 'ease-out'
+        });
+        
+        this.animation.onfinish = () => this.onAnimationFinish(false);
+        this.animation.oncancel = () => this.isClosing = false;
+      }
+    
+      open() {
+        this.el.style.height = `${this.el.offsetHeight}px`;
+        this.el.open = true;
+        window.requestAnimationFrame(() => this.expand());
+      }
+    
+      expand() {
+        this.isExpanding = true;
+        const startHeight = `${this.el.offsetHeight}px`;
+        const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
+        
+        if (this.animation) {
+          this.animation.cancel();
+        }
+        
+        this.animation = this.el.animate({
+          height: [startHeight, endHeight]
+        }, {
+          duration: 400,
+          easing: 'ease-out'
+        });
+        this.animation.onfinish = () => this.onAnimationFinish(true);
+        this.animation.oncancel = () => this.isExpanding = false;
+      }
+    
+      onAnimationFinish(open) {
+        this.el.open = open;
+        this.animation = null;
+        this.isClosing = false;
+        this.isExpanding = false;
+        this.el.style.height = this.el.style.overflow = '';
+      }
+    }
+    
+    document.querySelectorAll('details').forEach((el) => {
+      new Accordion(el);
+    });</script>
+  </details></div>
+
+  <!-- programming language -->
 
     <!--Google Maps-->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.5900356817033!2d29.4311007!3d40.7930262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb2062e70c0e65%3A0xaed038dc1a34a4ef!2sTatl%C4%B1kuyu%2C%20G%C3%BCney%20Yanyol%20Cd.%20No%3A236%2C%2041400%20Gebze%2FKocaeli!5e0!3m2!1sen!2str!4v1667483429195!5m2!1sen!2str" width="90%" height="450" style="border:0;margin-left: 80px;margin-bottom: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <!--Google Maps-->
+   <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.5900356817033!2d29.4311007!3d40.7930262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb2062e70c0e65%3A0xaed038dc1a34a4ef!2sTatl%C4%B1kuyu%2C%20G%C3%BCney%20Yanyol%20Cd.%20No%3A236%2C%2041400%20Gebze%2FKocaeli!5e0!3m2!1sen!2str!4v1667483429195!5m2!1sen!2str" width="90%" height="450" style="border:0;margin-left: 80px;margin-bottom: 40px;margin-top: 100px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+    <!--Google Maps-->
 
       <!-- Contact Section -->
       <section id="contact" class="section has-img-bg pb-0">
@@ -322,11 +449,15 @@
                     <h6 class="mb-0">Telefon</h6>
                     <p class="mb-4">+90-0262-643-91-92</p>
 
-                    <h6 class="mb-0">Adres</h6>
+                    <h6 class="mb-0">Fax</h6>
+                    <p class="mb-4">+90-0262-643-34-30</p>
+<br>
+                    <h6 class="mb-0">Addres</h6>
                     <p class="mb-4">Tatlıkuyu Mah. Guney Yanyol Cad. No : 236 Mert Plaza - Gebze/Kocaeli TURKEY 41400</p>
 
                     <h6 class="mb-0">Email</h6>
-                    <p class="mb-0">info@armoli.com</p>
+                    <p class="mb-0">info@aragis.com</p>
+
                     <p></p>
                 </div>
                 <div class="col-md-6 border-left py-3">
@@ -361,8 +492,19 @@
             <footer class="mt-5 py-4 border-top border-secondary"></footer>
             <!-- End of Page Footer -->  
         </div>
+
+        <div align="center" class="sociallink">
+            <i style=" cursor: pointer;" class="fa-brands fa-square-twitter"></i>
+            <i style=" cursor: pointer;" style=" cursor: pointer;" class="fa-brands fa-linkedin"></i>
+            <i style=" cursor: pointer;" class="fa-brands fa-square-facebook"></i>
+            <i style=" cursor: pointer;" class="fa-brands fa-stack-overflow"></i>
+            <i style=" cursor: pointer;" class="fa-brands fa-square-github"></i>
+            <i style=" cursor: pointer;" class="fa-brands fa-square-git"></i>
+            <i style=" cursor: pointer;" class="fa-brands fa-square-google-plus"></i>
+        </div>
+
     </section>
-	
+
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>

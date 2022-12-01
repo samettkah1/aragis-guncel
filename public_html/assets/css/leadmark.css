@@ -48,11 +48,14 @@ h1, h2, h3, h4, h5, h6, p{
   font-weight:300;
   letter-spacing: .4px;
 }
+
+
+
 #more {display: none;}
 .skillBtn{background-color: rgb(255, 255, 255);
   text-align: center;
   color: #450000;
-  background:url(/public_html/assets/imgs/mouse-click-icon.webp);
+  background:url(/assets/imgs/mouse-click-icon.webp);
   width: 60px;
   height: 60px;
   border: none;
@@ -66,10 +69,18 @@ h1, h2, h3, h4, h5, h6, p{
   background-repeat: no-repeat;
   border-radius: 50%;
 }
+.sociallink{
+  width:100%;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 40px;
+  margin-top: 20px;
+ 
+}
 
 .container1{
   border-radius:3px;
-  /*width:500px;*/
   width: 73%;
   margin:10px auto;
   text-align:center;
@@ -136,6 +147,13 @@ tbody td:nth-child(2) .percent{
   animation: barOne .4s linear;
   -webkit-animation:barOne .4s linear;
 }
+.three .fill{
+  width:0%;
+  background:rgb(134, 0, 0);
+  border-radius:1px;
+  animation: barOne .4s linear;
+  -webkit-animation:barOne .4s linear;
+}
 @keyframes barOne{
   0%{width:0%;}
   100%{}
@@ -168,7 +186,7 @@ tbody td:nth-child(2) .percent{
  width:4.8%;
  height: 9%;
  z-index: 10;
- background:url(/public_html/assets/imgs/wplogo.png);
+ background:url(/assets/imgs/wplogo.png);
  background-size:95%; 
  border-radius: 20%;
  border: 1px solid transparent;
@@ -855,7 +873,7 @@ select {
   transition: all 0.5s;
   cursor: pointer;
  background-size: 100%;
-  background: url(/Aragis/public_html/assets/imgs/down1arrow.png);
+  background: url(/assets/imgs/down1arrow.png);
   background-repeat: no-repeat;
 }
 
