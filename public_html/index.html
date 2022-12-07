@@ -1,252 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with LeadMark landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Aragis</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + LeadMark main styles -->
-	<link rel="stylesheet" href="assets/css/leadmark.css">
-    <link rel="icon" href="assets/imgs/logo.png" type="image/x-icon" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/64610c8cda.js" crossorigin="anonymous"></script>
-<script>$(document).ready(function(){
-  $(".navbar .nav-link").on('click', function(event) {
 
-      if (this.hash !== "") {
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with LeadMark landing page.">
+  <meta name="author" content="Devcrud">
+  <title>Aragis</title>
+  <!-- font icons -->
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+  <!-- Bootstrap + LeadMark main styles -->
+  <link rel="stylesheet" href="assets/css/leadmark.css">
+  <link rel="icon" href="assets/imgs/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/64610c8cda.js" crossorigin="anonymous"></script>
+  <script>$(document).ready(function () {
+      $(".navbar .nav-link").on('click', function (event) {
+
+        if (this.hash !== "") {
 
           event.preventDefault();
 
           var hash = this.hash;
 
           $('html, body').animate({
-              scrollTop: $(hash).offset().top
-          }, 700, function(){
-              window.location.hash = hash;
+            scrollTop: $(hash).offset().top
+          }, 700, function () {
+            window.location.hash = hash;
           });
-      } 
-  });
-});</script>
+        }
+      });
+    });</script>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <!-- whatsapp  -->    
+  <!-- whatsapp  -->
 
-    <form action="https://wa.me/+905343663505" target="_blank">
-      <input class="wpbtn"  type="submit" value="btn" />
+  <form action="https://wa.me/+905343663505" target="_blank">
+    <input class="wpbtn" type="submit" value="btn" />
   </form>
-    <!-- end whatsapp -->
-    <!-- page Navigation -->
-   <div> <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
-    <a class="navbar-brand" target="_blank" href="http://www.aragis.com/">
-        <img  style="width: 160px;margin-left: 150px;" src="assets/imgs/icon2.png" alt="icon2"> 
-            </a>  
-        <div class="container">
-           
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">   
-                                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#solutionss">Solution </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#codlan">Prog-Lan</a>
-                  </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="indextr.html">Tr</a>
-                    </li>
-                </ul>
-            </div>
+  <!-- end whatsapp -->
+  <!-- page Navigation -->
+  <div>
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+      <a class="navbar-brand" target="_blank" href="http://www.aragis.com/">
+        <img style="width: 160px;margin-left: 150px;" src="assets/imgs/icon2.png" alt="icon2">
+      </a>
+      <div class="container">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solutionss">Solution </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#codlan">Prog-Lan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indextr.html">Tr</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-   </div>
-     <!-- End Of Second Navigation -->    
+  </div>
+  <!-- End Of Second Navigation -->
 
-     <!-- Page Header -->    
-    <header class="header">
-        <div class="overlay">
-            <p style="font-size:65px ;text-align: center;font-family: 'Sen', sans-serif;"  >CUSTOMIZED SMART SOLUTIONS FOR YOU</p> 
-        </div>      
-   
-        <div class="shape">
-            <svg viewBox="0 0 1500 200">
-                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
-            </svg>
-        </div>  
-     
-    </header>
-    <!-- End Of Page Header -->
-    <hr style="width:1620;margin-top: 0px;background-color: #4CAF50;height: 2px;">
+  <!-- Page Header -->
+  <header class="header">
+    <div class="overlay">
+      <p style="font-size:65px ;text-align: center;font-family: 'Sen', sans-serif;">CUSTOMIZED SMART SOLUTIONS FOR YOU
+      </p>
+    </div>
+
+    <div class="shape">
+      <svg viewBox="0 0 1500 200">
+        <path
+          d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z" />
+      </svg>
+    </div>
+
+  </header>
+  <!-- End Of Page Header -->
+  <hr style="width:1620;margin-top: 0px;background-color: #4CAF50;height: 2px;">
 
 
 
-    <!-- About Section -->
-    <p style="margin-top: 100px;"></p>
-    <section class="section" id="about">
-      <div class="container">
-          <div class="row justify-content-between">
-              <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
-                  <h5 class="section-title mb-0" style="font-size:50px;">About Company</h5>
-                  <p></p>
-                  <h6 id="whoarewe" class="section-title mb-0">Who Are We?</h6>
-                  <p class="prf">
-                    As Armoli Technology Corporation, we started our activities as a software engineering company providing engineering services in the 2000s. We have been continuing our activities under the name of Aragis engineering since 2022 as a software company that has proven itself throughout the country with a structure that constantly improves itself in parallel with the developing technology.                       </p>
-                  <img src="assets/imgs/about2.jpg" alt="office" class="w-100 mt-3 shadow-sm">
-              </div>
-              <div class="col-md-6 pl-md-5">
-                  <div class="row">
-                      <div class="col-6">
-                          <img src="assets/imgs/about-1.jpg" alt="" class="w-100 shadow-sm">
-                      </div>
-                      <div class="col-6">
-                          <img src="assets/imgs/aboutoffice1.png" alt="" class="w-100 shadow-sm">
-                      </div>
-                      <div class="col-12 mt-4">
-                          <p><h5> Our Mission</h5></p>
-                          <p class="prf">“Shape the future of the Internet by creating unprecedented value and opportunity for our customers, employees, investors, and ecosystem partners.”
-                          </p>
-                          <p><h5>Our Vision</h5></p>
-                          <p class="prf">We aim for innovation not only in our development organization but also in the way we approach every aspect of our business.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>              
+  <!-- About Section -->
+  <p style="margin-top: 100px;"></p>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+          <h5 class="section-title mb-0" style="font-size:50px;">About Company</h5>
+          <p></p>
+          <h6 id="whoarewe" class="section-title mb-0">Who Are We?</h6>
+          <p class="prf">
+            As Armoli Technology Corporation, we started our activities as a software engineering company providing
+            engineering services in the 2000s. We have been continuing our activities under the name of Aragis
+            engineering since 2022 as a software company that has proven itself throughout the country with a structure
+            that constantly improves itself in parallel with the developing technology. </p>
+          <img src="assets/imgs/about2.jpg" alt="office" class="w-100 mt-3 shadow-sm">
+        </div>
+        <div class="col-md-6 pl-md-5">
+          <div class="row">
+            <div class="col-6">
+              <img src="assets/imgs/about-1.jpg" alt="" class="w-100 shadow-sm">
+            </div>
+            <div class="col-6">
+              <img src="assets/imgs/aboutoffice1.png" alt="" class="w-100 shadow-sm">
+            </div>
+            <div class="col-12 mt-4">
+              <p>
+              <h5> Our Mission</h5>
+              </p>
+              <p class="prf">“Shape the future of the Internet by creating unprecedented value and opportunity for our
+                customers, employees, investors, and ecosystem partners.”
+              </p>
+              <p>
+              <h5>Our Vision</h5>
+              </p>
+              <p class="prf">We aim for innovation not only in our development organization but also in the way we
+                approach every aspect of our business.</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
+ 
+  <!-- End OF About Section -->
 
-    <!-- End OF About Section -->
-   
-  <img  class="cofimg" src="assets/imgs/coffee.jpg" alt="coffee"> 
-  <hr  class="cofimg">
-    <section>
-        <div class="container">
-        <div style="font-size:1.5rem ;" class="row center counters dark">
-            <div class="col-md-3 col-sm-6">
-                <i class="fa fa-user"></i>
-                <strong data-to="112" data-append="+">112+</strong>
-                <label>Happy Customer</label>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <i class="fa fa-star"></i>
-                <strong data-to="138" data-append="+">138+</strong>
-                <br>
-                <label>Active Work</label>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <i class="fa-solid fa-code"></i>
-                <strong data-to="1925" data-append="+">796+</strong>
-                <label>API Services</label>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <i class="fa fa-bar-chart"></i>
-                <strong data-to="6"  data-append="+"><script>function calculateAge(birthMonth, birthDay, birthYear)
-                  {
-                    todayDate = new Date();
-                    todayYear = todayDate.getFullYear();
-                    todayMonth = todayDate.getMonth();
-                    todayDay = todayDate.getDate();
-                    age = todayYear - birthYear;
-                   
-                    if (todayMonth < birthMonth - 1)
-                    {
-                      age--;
-                    }
-                   
-                    if (birthMonth - 1 == todayMonth && todayDay < birthDay)
-                    {
-                      age--;
-                    }
-                    return age;
-                  }
-                  
-                  document.write(calculateAge(1,1,2015)+"+" );
-                </script> 
-                  </strong>
-              
-                <label>Years of Experience</label>
-            </div>
+  <img class="cofimg" src="assets/imgs/coffee.jpg" alt="coffee">
+  <hr class="cofimg">
+  <section>
+    <div class="container">
+      <div style="font-size:1.5rem ;" class="row center counters dark">
+        <div class="col-md-3 col-sm-6">
+          <i class="fa fa-user"></i>
+          <strong data-to="112" data-append="+">112+</strong>
+          <label>Happy Customer</label>
         </div>
+        <div class="col-md-3 col-sm-6">
+          <i class="fa fa-star"></i>
+          <strong data-to="138" data-append="+">138+</strong>
+          <br>
+          <label>Active Work</label>
         </div>
-      </section>
-       <hr style="margin-bottom: 0px;" class="cofimg">
+        <div class="col-md-3 col-sm-6">
+          <i class="fa-solid fa-code"></i>
+          <strong data-to="1925" data-append="+">796+</strong>
+          <label>API Services</label>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <i class="fa fa-bar-chart"></i>
+          <strong data-to="6" data-append="+">
+            <script>function calculateAge(birthMonth, birthDay, birthYear) {
+                todayDate = new Date();
+                todayYear = todayDate.getFullYear();
+                todayMonth = todayDate.getMonth();
+                todayDay = todayDate.getDate();
+                age = todayYear - birthYear;
 
-      
+                if (todayMonth < birthMonth - 1) {
+                  age--;
+                }
 
+                if (birthMonth - 1 == todayMonth && todayDay < birthDay) {
+                  age--;
+                }
+                return age;
+              }
 
+              document.write(calculateAge(1, 1, 2015) + "+");
+            </script>
+          </strong>
 
-       
-    <!-- Solution section -->
-<p id="solutionss"></p>
-<br>
-<br>
-    <section class="section" id="solutions" style="padding:10px;">
-      <div class="container">
-          <div class="row justify-content-between">
-            <div style="align-items: center;">
-                  <h6 class="section-title text-center">Our Solutions</h6>
-                 
-                  <h6 class="section-subtitle text-center mb-5 pb-3">We offer efficient, high performance and guaranteed solutions with our experienced team with strong references</h6>
-                </div>
+          <label>Years of Experience</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr style="margin-bottom: 0px;" class="cofimg">
+  <!-- Solution section -->
+  <p id="solutionss"></p>
+  <br>
+  <br>
+  <section class="section" id="solutions" style="padding:10px;">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div style="align-items: center;">
+          <h6 class="section-title text-center">Our Solutions</h6>
 
-         <div style="margin-left:auto;margin-right:auto" class="solutionout1">
-            <img class="solu" style="height:80px ;" src="assets/imgs/webdevelop.png" alt="web development logo" >
-  <div ><p class="solutionhead">Web Development</p><p class="solutiontext">
-  
-    We offer fast, profitable, safe and effective solutions in the light of the latest innovations to those who entrust us with their companies' showcases in the internet world.    
-  </p></div>
-        </div>  
+          <h6 class="section-subtitle text-center mb-5 pb-3">We offer efficient, high performance and guaranteed
+            solutions with our experienced team with strong references</h6>
+        </div>
+
         <div style="margin-left:auto;margin-right:auto" class="solutionout1">
-            <img class="solu" style="height:80px ;" src="assets/imgs/unnamed-removebg-preview.png" alt="web development logo" >
-  <div ><p class="solutionhead">App Development</p><p class="solutiontext">
-    We are a team of professionals who can build groundbreaking desktop solutions from scratch and modernize your legacy solutions.</p></div>
-        </div>  
+          <img class="solu" style="height:80px ;" src="assets/imgs/webdevelop.png" alt="web development logo">
+          <div>
+            <p class="solutionhead">Web Development</p>
+            <p class="solutiontext">
+
+              We offer fast, profitable, safe and effective solutions in the light of the latest innovations to those
+              who entrust us with their companies' showcases in the internet world.
+            </p>
+          </div>
+        </div>
         <div style="margin-left:auto;margin-right:auto" class="solutionout1">
-            <img class="solu" style="height:80px ;" src="assets/imgs/sunucugeli1 (2).png" alt="web development logo" >
-  <div ><p class="solutionhead">Server Management</p><p class="solutiontext">
-    The performance of your infrastructure is crucial for business efficiency and customer satisfaction. Aragis can support your IT department by taking over routine tasks.</p></div>
-        </div>  
+          <img class="solu" style="height:80px ;" src="assets/imgs/unnamed-removebg-preview.png"
+            alt="web development logo">
+          <div>
+            <p class="solutionhead">App Development</p>
+            <p class="solutiontext">
+              We are a team of professionals who can build groundbreaking desktop solutions from scratch and modernize
+              your legacy solutions.</p>
+          </div>
+        </div>
+        <div style="margin-left:auto;margin-right:auto" class="solutionout1">
+          <img class="solu" style="height:80px ;" src="assets/imgs/sunucugeli1 (2).png" alt="web development logo">
+          <div>
+            <p class="solutionhead">Server Management</p>
+            <p class="solutiontext">
+              The performance of your infrastructure is crucial for business efficiency and customer satisfaction.
+              Aragis can support your IT department by taking over routine tasks.</p>
+          </div>
+        </div>
         <div style="margin-left:auto;margin-right:auto" class="solutionout2">
-            <img class="solu" style="height:80px ;" src="assets/imgs/pngtree-beautiful-database-management-vector-glyph-icon-png-image_1825991-removebg-preview (2).png" alt="web development logo" >
-  <div ><p class="solutionhead">Database Management</p><p class="solutiontext">
-    We strive to make our database system robust and secure and we actively maintain, monitor and update the database system to prevent potential problems. </p></div>
-        </div> 
-        <div style="margin-left:auto;margin-right:auto" class="solutionout2" >
-            <img class="solu" style="height:80px;" src="assets/imgs/softwaresup.png" alt="web development logo" >
-  <div ><p class="solutionhead">Software &nbsp;&nbsp;&nbsp;&nbsp; Support</p><p class="solutiontext"> 
-    Going beyond software to deliver the best Web solutions that turn data into information, exceed customers' expectations and solve their problems.</p></div>
-        </div>   
-        <div style="margin-left:auto;margin-right:auto" class="solutionout2" >
-            <img class="solu" style="height:80px;" src="assets/imgs/takipsistem (2).png" alt="web development logo" >
-  <div ><p class="solutionhead">Tracking <br> Systems</p><p class="solutiontext">
-    We are committed to providing better vehicle tracking system, fleet management for vehicles, We focus on our customers' needs to provide high standards of customer support </p></div>        </div>  
-          </div>              
+          <img class="solu" style="height:80px ;"
+            src="assets/imgs/pngtree-beautiful-database-management-vector-glyph-icon-png-image_1825991-removebg-preview (2).png"
+            alt="web development logo">
+          <div>
+            <p class="solutionhead">Database Management</p>
+            <p class="solutiontext">
+              We strive to make our database system robust and secure and we actively maintain, monitor and update the
+              database system to prevent potential problems. </p>
+          </div>
+        </div>
+        <div style="margin-left:auto;margin-right:auto" class="solutionout2">
+          <img class="solu" style="height:80px;" src="assets/imgs/softwaresup.png" alt="web development logo">
+          <div>
+            <p class="solutionhead">Software &nbsp;&nbsp;&nbsp;&nbsp; Support</p>
+            <p class="solutiontext">
+              Going beyond software to deliver the best Web solutions that turn data into information, exceed customers'
+              expectations and solve their problems.</p>
+          </div>
+        </div>
+        <div style="margin-left:auto;margin-right:auto" class="solutionout2">
+          <img class="solu" style="height:80px;" src="assets/imgs/takipsistem (2).png" alt="web development logo">
+          <div>
+            <p class="solutionhead">Tracking <br> Systems</p>
+            <p class="solutiontext">
+              We are committed to providing better vehicle tracking system, fleet management for vehicles, We focus on
+              our customers' needs to provide high standards of customer support </p>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
 
-   
-    <!-- End OF Solution Section -->
 
-    
-    <!-- Testmonial Section -->
-    <!-- <section class="section" id="testmonial">
+  <!-- End OF Solution Section -->
+
+
+  <!-- Testmonial Section -->
+  <!-- <section class="section" id="testmonial">
         <div class="container">
             <h6 class="section-title text-center mb-0" id="testmon">Our Business Partners</h6>
            
@@ -282,264 +320,261 @@
             </div>
         </div>
     </section> -->
-    <!-- End of Testmonial Section -->
-    <p style="margin-bottom:70px ;" id="codlan"></p>
-<!-- programming language -->
-<div style="max-width:100% ;max-height: 100%;"> <details>
-  <summary  style="font-size:32px ;text-align: center;">Programming Languages That We Use</summary>
-  <div class="content">
-    <div style="max-width: 1728px;margin-right: auto;margin-left: auto;">
-      <div style="max-width: 100%;max-height:100%;" class="container1">
-        <div class="skills">
-          <div class="border">
-        <table>
-          <thead>
-           
-          </thead>
-          <tbody>
-            <tr>
-              <td>JavaScript</td>
-              <td><span class="percent">90%</span>
-                <div  class="bar one">
-                  <div class="fill" style="width:90%;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>PHP</td>
-              <td>
-                <span class="percent">85%</span>
-                <div class="bar one">
-                  <div class="fill" style="width:85%;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td><span class="percent">70%</span>
-                <div class="bar one">
-                  <div class="fill" style="width:70%;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>VB .Net</td>
-              <td><span class="percent">30%</span>
-                <div class="bar two">
-                  <div class="fill" style="width:30%;"></div>
-                </div>
-              </td>
-            </tr>
-                  <tr>
-              <td>C#</td>
-              <td><span class="percent">15%</span>
-                <div class="bar three">
-                  <div class="fill" style="width:15%;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Java</td>
-              <td><span class="percent">85%</span>
-                <div class="bar one">
-                  <div class="fill" style="width:85%;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td><span class="percent">95%</span>
-                <div class="bar one">
-                  <div class="fill" style="width:95%;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>HTML5</td>
-              <td><span class="percent">85%</span>
-                <div class="bar one">
-                  <div class="fill" style="width:85%;"></div>
-                </div>
-              </td>
-            </tr>
-          
-          </tbody>
-         
-        </table>
-       </div>
+  <!-- End of Testmonial Section -->
+  <p style="margin-bottom:70px ;" id="codlan"></p>
+  <!-- programming language -->
+  <div style="max-width:100% ;max-height: 100%;">
+    <details>
+      <summary style="font-size:32px ;text-align: center;">Programming Languages That We Use</summary>
+      <div class="content">
+        <div style="max-width: 1728px;margin-right: auto;margin-left: auto;">
+          <div style="max-width: 100%;max-height:100%;" class="container1">
+            <div class="skills">
+              <div class="border">
+                <table>
+                  <thead>
+
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>JavaScript</td>
+                      <td><span class="percent">90%</span>
+                        <div class="bar one">
+                          <div class="fill" style="width:90%;"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>PHP</td>
+                      <td>
+                        <span class="percent">85%</span>
+                        <div class="bar one">
+                          <div class="fill" style="width:85%;"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Python</td>
+                      <td><span class="percent">70%</span>
+                        <div class="bar one">
+                          <div class="fill" style="width:70%;"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>VB .Net</td>
+                      <td><span class="percent">30%</span>
+                        <div class="bar two">
+                          <div class="fill" style="width:30%;"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>C#</td>
+                      <td><span class="percent">15%</span>
+                        <div class="bar three">
+                          <div class="fill" style="width:15%;"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Java</td>
+                      <td><span class="percent">85%</span>
+                        <div class="bar one">
+                          <div class="fill" style="width:85%;"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>CSS</td>
+                      <td><span class="percent">95%</span>
+                        <div class="bar one">
+                          <div class="fill" style="width:95%;"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>HTML5</td>
+                      <td><span class="percent">85%</span>
+                        <div class="bar one">
+                          <div class="fill" style="width:85%;"></div>
+                        </div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  <script>class Accordion {
-    constructor(el) {
-      this.el = el;
-      this.summary = el.querySelector('summary');
-      this.content = el.querySelector('.content');
-  
-      this.animation = null;
-      this.isClosing = false;
-      this.isExpanding = false;
-      this.summary.addEventListener('click', (e) => this.onClick(e));
-    }
-  
-    onClick(e) {
-      e.preventDefault();
-      this.el.style.overflow = 'hidden';
-      if (this.isClosing || !this.el.open) {
-        this.open();
-      } else if (this.isExpanding || this.el.open) {
-        this.shrink();
-      }
-    }
-  
-    shrink() {
-      this.isClosing = true;
-      
-      const startHeight = `${this.el.offsetHeight}px`;
-      const endHeight = `${this.summary.offsetHeight}px`;
-      
-      if (this.animation) {
-        this.animation.cancel();
-      }
-      
-      this.animation = this.el.animate({
-        height: [startHeight, endHeight]
-      }, {
-        duration: 400,
-        easing: 'ease-out'
-      });
-      
-      this.animation.onfinish = () => this.onAnimationFinish(false);
-      this.animation.oncancel = () => this.isClosing = false;
-    }
-  
-    open() {
-      this.el.style.height = `${this.el.offsetHeight}px`;
-      this.el.open = true;
-      window.requestAnimationFrame(() => this.expand());
-    }
-  
-    expand() {
-      this.isExpanding = true;
-      const startHeight = `${this.el.offsetHeight}px`;
-      const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
-      
-      if (this.animation) {
-        this.animation.cancel();
-      }
-      
-      this.animation = this.el.animate({
-        height: [startHeight, endHeight]
-      }, {
-        duration: 400,
-        easing: 'ease-out'
-      });
-      this.animation.onfinish = () => this.onAnimationFinish(true);
-      this.animation.oncancel = () => this.isExpanding = false;
-    }
-  
-    onAnimationFinish(open) {
-      this.el.open = open;
-      this.animation = null;
-      this.isClosing = false;
-      this.isExpanding = false;
-      this.el.style.height = this.el.style.overflow = '';
-    }
-  }
-  
-  document.querySelectorAll('details').forEach((el) => {
-    new Accordion(el);
-  });</script>
-</details></div>
+        <script>class Accordion {
+            constructor(el) {
+              this.el = el;
+              this.summary = el.querySelector('summary');
+              this.content = el.querySelector('.content');
+
+              this.animation = null;
+              this.isClosing = false;
+              this.isExpanding = false;
+              this.summary.addEventListener('click', (e) => this.onClick(e));
+            }
+
+            onClick(e) {
+              e.preventDefault();
+              this.el.style.overflow = 'hidden';
+              if (this.isClosing || !this.el.open) {
+                this.open();
+              } else if (this.isExpanding || this.el.open) {
+                this.shrink();
+              }
+            }
+
+            shrink() {
+              this.isClosing = true;
+
+              const startHeight = `${this.el.offsetHeight}px`;
+              const endHeight = `${this.summary.offsetHeight}px`;
+
+              if (this.animation) {
+                this.animation.cancel();
+              }
+
+              this.animation = this.el.animate({
+                height: [startHeight, endHeight]
+              }, {
+                duration: 400,
+                easing: 'ease-out'
+              });
+
+              this.animation.onfinish = () => this.onAnimationFinish(false);
+              this.animation.oncancel = () => this.isClosing = false;
+            }
+
+            open() {
+              this.el.style.height = `${this.el.offsetHeight}px`;
+              this.el.open = true;
+              window.requestAnimationFrame(() => this.expand());
+            }
+
+            expand() {
+              this.isExpanding = true;
+              const startHeight = `${this.el.offsetHeight}px`;
+              const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
+
+              if (this.animation) {
+                this.animation.cancel();
+              }
+
+              this.animation = this.el.animate({
+                height: [startHeight, endHeight]
+              }, {
+                duration: 400,
+                easing: 'ease-out'
+              });
+              this.animation.onfinish = () => this.onAnimationFinish(true);
+              this.animation.oncancel = () => this.isExpanding = false;
+            }
+
+            onAnimationFinish(open) {
+              this.el.open = open;
+              this.animation = null;
+              this.isClosing = false;
+              this.isExpanding = false;
+              this.el.style.height = this.el.style.overflow = '';
+            }
+          }
+
+          document.querySelectorAll('details').forEach((el) => {
+            new Accordion(el);
+          });</script>
+    </details>
+  </div>
 
   <!-- programming language -->
 
 
 
 
-    <!--Google Maps-->
-   <div style="align-items:center ;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.5900356817033!2d29.4311007!3d40.7930262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb2062e70c0e65%3A0xaed038dc1a34a4ef!2sTatl%C4%B1kuyu%2C%20G%C3%BCney%20Yanyol%20Cd.%20No%3A236%2C%2041400%20Gebze%2FKocaeli!5e0!3m2!1sen!2str!4v1667483429195!5m2!1sen!2str" width="90%" height="550" style="max-height: 100%;max-width: 1728px;;border:0;margin-bottom:40px;margin-top:100px;display: block;margin-left: auto;margin-right: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   </div>
-    <!--Google Maps-->
+  <!--Google Maps-->
+  <div style="align-items:center ;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.5900356817033!2d29.4311007!3d40.7930262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb2062e70c0e65%3A0xaed038dc1a34a4ef!2sTatl%C4%B1kuyu%2C%20G%C3%BCney%20Yanyol%20Cd.%20No%3A236%2C%2041400%20Gebze%2FKocaeli!5e0!3m2!1sen!2str!4v1667483429195!5m2!1sen!2str"
+      width="90%" height="550"
+      style="max-height: 100%;max-width: 1728px;;border:0;margin-bottom:40px;margin-top:100px;display: block;margin-left: auto;margin-right: auto;"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!--Google Maps-->
 
-      <!-- Contact Section -->
-      <section id="contact" class="section has-img-bg pb-0">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 my-3">      
-             
-                    <h6 class="mb-0">Telefon</h6>
-                    <p class="mb-4">+90-0262-643-91-92</p>
+  <!-- Contact Section -->
+  <section id="contact" class="section has-img-bg pb-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 my-3">
 
-                    <h6 class="mb-0">Fax</h6>
-                    <p class="mb-4">+90-0262-643-34-30</p>
-<br>
-                    <h6 class="mb-0">Addres</h6>
-                    <p class="mb-4">Tatlıkuyu Mah. Guney Yanyol Cad. No : 236 Mert Plaza - Gebze/Kocaeli TURKEY 41400</p>
+          <h6 class="mb-0">Telefon</h6>
+          <p class="mb-4">+90-0262-643-91-92</p>
 
-                    <h6 class="mb-0">Email</h6>
-                    <p class="mb-0">info@aragis.com</p>
+          <h6 class="mb-0">Fax</h6>
+          <p class="mb-4">+90-0262-643-34-30</p>
+          <br>
+          <h6 class="mb-0">Addres</h6>
+          <p class="mb-4">Tatlıkuyu Mah. Guney Yanyol Cad. No : 236 Mert Plaza - Gebze/Kocaeli TURKEY 41400</p>
 
-                    <p></p>
-                </div>
-                <div class="col-md-6 border-left py-3">
-                    <h1>Leave a comment</h1>
-                    <div class="form-group">
-                      <h5 for="name">Name</h5>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Enter name"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <h5 for="email">Email</h5>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Enter email"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <h5 for="message">Message</h5>
-                      <textarea class="form-control" id="message" rows="3"></textarea>
-                    </div>
-                    <button class="btn btn-primary" onclick="sendMail()">Submit</button>
-                  </div>
-            </div>
+          <h6 class="mb-0">Email</h6>
+          <p class="mb-0">info@aragis.com</p>
 
-            <!-- Page Footer -->
-            <footer class="mt-5 py-4 border-top border-secondary"></footer>
-            <!-- End of Page Footer -->  
+          <p></p>
         </div>
-
-        <div align="center" class="sociallink">
-            <i style=" cursor: pointer;" class="fa-brands fa-square-twitter"></i>
-            <i style=" cursor: pointer;" class="fa-brands fa-linkedin"></i>
-            <i style=" cursor: pointer;" class="fa-brands fa-square-facebook"></i>
-            <i style=" cursor: pointer;" class="fa-brands fa-stack-overflow"></i>
-            <i style=" cursor: pointer;" class="fa-brands fa-square-github"></i>
-            <i style=" cursor: pointer;" class="fa-brands fa-square-git"></i>
-            <i style=" cursor: pointer;" class="fa-brands fa-square-google-plus"></i>
+        <div class="col-md-6 border-left py-3">
+          <h1>Leave a comment</h1>
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" />
+          </div>
+          <div class="form-group">
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
         </div>
+      </div>
 
-    </section>
+      <!-- Page Footer -->
+      <footer class="mt-5 py-4 border-top border-secondary"></footer>
+      <!-- End of Page Footer -->
+    </div>
 
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <div align="center" class="sociallink">
+      <i style=" cursor: pointer;" class="fa-brands fa-square-twitter"></i>
+      <i style=" cursor: pointer;" class="fa-brands fa-linkedin"></i>
+      <i style=" cursor: pointer;" class="fa-brands fa-square-facebook"></i>
+      <i style=" cursor: pointer;" class="fa-brands fa-stack-overflow"></i>
+      <i style=" cursor: pointer;" class="fa-brands fa-square-github"></i>
+      <i style=" cursor: pointer;" class="fa-brands fa-square-git"></i>
+      <i style=" cursor: pointer;" class="fa-brands fa-square-google-plus"></i>
+    </div>
 
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+  </section>
 
-    <!-- Isotope -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+  <!-- core  -->
+  <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!-- LeadMark js -->
-    <script src="assets/js/leadmark.js"></script>
+  <!-- bootstrap 3 affix -->
+  <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+  <!-- Isotope -->
+  <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+  <!-- LeadMark js -->
+  <script src="assets/js/leadmark.js"></script>
 
 </body>
+
 </html>
