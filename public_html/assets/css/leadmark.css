@@ -57,7 +57,24 @@ p {
   font-weight: 300;
   letter-spacing: .4px;
 }
+.hirebtn{
+  color: rgb(255, 255, 255);
+  background-color: #4CAF50;
+  border: 1px solid transparent;
+  background-repeat: no-repeat;
+  max-height: 10%;
+  width: 10%;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.hirebtn:hover{
+background-color:#6CAF50;
+}
 
+.prf2{
+  font-size: 40px;
+}
 .menu-item,
 .menu-open-button {
    background: #EEEEEE;
